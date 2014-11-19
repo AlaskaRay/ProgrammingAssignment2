@@ -10,7 +10,7 @@ makeCacheMatrix <- function(x = matrix()) {
     m <<- NULL
   }
   get <- function() x
-  setInverse <- function(ginv) m <<- ginv
+  setInverse <- function(ginv) m <<- ginv  #ginv comes from the MASS package
   getInverse <- function() m
   list(set = set, get = get,
        setInverse = setInverse,
